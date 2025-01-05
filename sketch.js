@@ -38,16 +38,12 @@ let r5y = -30;
 let r5x = -60;
 let p =0;
 let pontosS;
-let backgroundS;
 
 function preload(){
   pontosS = loadSound('pontos.wav');
-  backgroundS = loadSound('fundo.wav');
 }
 
 function setup() {
-  backgroundS.setVolume(1);
-  backgroundS.play();
   createCanvas(940, 720);
   prepareNextBlock();
 }
@@ -374,7 +370,6 @@ function drawBlock(block, x, y, color) {
 }
 
 function gameOver() {
-  backgroundS.stop();
   gameOverFlag = true;
 }
 
