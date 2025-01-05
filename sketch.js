@@ -54,6 +54,8 @@ function draw() {
     text('Next block', 610, 140);
     fill('white');
     textSize(25);
+    text('X to rotate piece', 560, 480);
+    text('Z to next piece', 560, 520);
     text('Arrows left and right', 560, 640);
     text('to move', 620, 670);
     text('Up or down to make', 560, 560)
